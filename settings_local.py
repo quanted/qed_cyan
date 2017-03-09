@@ -26,7 +26,7 @@ os.environ.update({
     'PROJECT_PATH': PROJECT_ROOT,
     'SITE_SKIN': 'EPA',                          # Leave empty ('') for default skin, 'EPA' for EPA skin
     'CONTACT_URL': 'https://www.epa.gov/research/forms/contact-us-about-epa-research',
-
+    'CYAN_REST_SERVER': 'https://cyan.epa.gov/cyan/cyano'
     # 'CTS_TEST_SERVER': 'http://134.67.114.6:8080',
     # 'CTS_EPI_SERVER': 'http://134.67.114.8',
     # 'CTS_JCHEM_SERVER': 'http://134.67.114.2',
