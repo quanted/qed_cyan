@@ -216,9 +216,3 @@ if DEBUG:
         format = '%(asctime)s %(levelname)s %(message)s',
     )
 
-try:
-    import settings_local
-    print("Importing additional local settings")
-except ImportError:
-    print("No local settings")
-    pass
