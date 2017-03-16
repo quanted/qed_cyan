@@ -1,0 +1,22 @@
+#clone
+git clone https://github.com/quanted/qed_cyan.git
+cd qed_cyan
+git submodule init
+git submodule update --init --recursive
+git submodule foreach --recursive git checkout master
+git submodule foreach --recursive git pull origin master
+
+#pycharm configuration, setup python
+#File - Default Settings - Project Interpreter
+#change interpreter to 2.7.* with django, etc
+#libraries in requirements .txt will need to be installed to this interpreter
+
+#also edit configuration (qed_cyan django button on upper right)
+#add local_settings.py to environmental variables for qed_cyan (use + to the right)
+#it should read:
+#DJANGO_SETTINGS_MODULE=settings_local;PYTHONUNBUFFERED=1
+
+#you can thereafter pull all submodules at the command line at once by:
+git submodule update --init --recursive
+git submodule foreach --recursive git checkout master
+git submodule foreach --recursive git pull origin master
