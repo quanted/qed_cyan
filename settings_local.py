@@ -43,9 +43,8 @@ try:
     with open('secret_key_django_dropbox.txt') as f:
         SECRET_KEY = f.read().strip()
 except IOError as e:
-    print "Could not find secret file"
+    print("Could not find secret file")
     SECRET_KEY = 'Shhhhhhhhhhhhhhh'
-
     ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1'
