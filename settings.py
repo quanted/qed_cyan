@@ -49,7 +49,7 @@ try:
     with open('secret_key_django_dropbox.txt') as f:
         SECRET_KEY = f.read().strip()
 except IOError as e:
-    print "Could not find secret file"
+    print("Could not find secret file")
     SECRET_KEY = 'Shhhhhhhhhhhhhhh'
     pass
 
@@ -121,17 +121,20 @@ INSTALLED_APPS = (
 # This breaks the pattern of a "pluggable" TEST_CTS django app, but it also makes it convenient to describe the server hosting the TEST API.
 TEST_CTS_PROXY_URL = "http://10.0.2.2:7080/"
 
+
+# NOTE: un-comment the below classes to develop in similar environment to QED
 MIDDLEWARE_CLASSES = (
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    # 'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.contrib.auth.middleware.AuthenticationMiddleware',
+    # 'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
 
+# NOTE: un-comment the below application to develop in similar environment to QED
 #WSGI_APPLICATION = 'wsgi_local.application'
 
 # Database
@@ -215,4 +218,3 @@ if DEBUG:
         level = logging.DEBUG,
         format = '%(asctime)s %(levelname)s %(message)s',
     )
-
