@@ -123,7 +123,7 @@ TEST_CTS_PROXY_URL = "http://10.0.2.2:7080/"
 
 
 # NOTE: un-comment the below classes to develop in similar environment to QED
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     # 'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
